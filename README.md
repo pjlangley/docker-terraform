@@ -28,7 +28,7 @@ locally for future commands. Like when working with AWS, for example.
 Let's run a command:
 
 ```
-$ docker run pjlangley/terraform -v `pwd`/.:/tfconfig -it init
+$ docker run -v `pwd`/.:/tfconfig -it pjlangley/terraform init
 
 Initializing the backend...
 
@@ -75,7 +75,7 @@ $ tree -a
 Now you can proceed to run other commands, such as `plan`:
 
 ```
-$ docker run pjlangley/terraform -v `pwd`/.:/tfconfig -it plan
+$ docker run -v `pwd`/.:/tfconfig -it pjlangley/terraform plan
 ```
 
 ## License
