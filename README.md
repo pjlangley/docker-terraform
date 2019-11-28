@@ -1,7 +1,9 @@
 # Docker Terraform executable
 
 This docker image provides a dockerised version of
-[Terraform](https://www.terraform.io).
+[Terraform](https://www.terraform.io). You can pull this
+[docker terraform](https://hub.docker.com/r/pjlangley/terraform)
+image from Docker Hub.
 
 It's designed to be used as a terraform executable, like a shell
 binary file. The idea is to limit personal machine software
