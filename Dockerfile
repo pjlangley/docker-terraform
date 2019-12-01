@@ -1,6 +1,6 @@
 FROM alpine:3.10.3
 
-ENV TF_VERSION 0.12.16
+ARG TF_VERSION=0.12.16
 
 # Required for `terraform init` tasks.
 RUN apk add curl

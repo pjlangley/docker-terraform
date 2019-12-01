@@ -80,6 +80,20 @@ Now you can proceed to run other commands, such as `plan`:
 $ docker run -v `pwd`/.:/tfconfig -it pjlangley/terraform plan
 ```
 
+## Build
+
+If you need a bit more control over this image, you can checkout and build it
+locally with some supported overrides.
+
+### Specify the Terraform version
+
+```
+$ docker build --build-arg TF_VERSION=0.12.16 -t my/terraform .
+... build output ...
+$ docker run -it my/terraform version
+Terraform v0.12.16
+```
+
 ## License
 
 MIT.
