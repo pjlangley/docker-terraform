@@ -30,7 +30,7 @@ locally for future commands. Like when working with AWS, for example.
 Let's run a command:
 
 ```
-$ docker run -v `pwd`/.:/tfconfig -it pjlangley/terraform init
+$ docker run --rm -v `pwd`/.:/tfconfig -it pjlangley/terraform init
 
 Initializing the backend...
 
@@ -77,7 +77,7 @@ $ tree -a
 Now you can proceed to run other commands, such as `plan`:
 
 ```
-$ docker run -v `pwd`/.:/tfconfig -it pjlangley/terraform plan
+$ docker run --rm -v `pwd`/.:/tfconfig -it pjlangley/terraform plan
 ```
 
 ## Build
@@ -90,7 +90,7 @@ locally with some supported overrides.
 ```
 $ docker build --build-arg TF_VERSION=0.12.16 -t my/terraform .
 ... build output ...
-$ docker run -it my/terraform version
+$ docker run --rm -it my/terraform version
 Terraform v0.12.16
 ```
 
