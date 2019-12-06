@@ -5,10 +5,6 @@ This docker image provides a dockerised version of
 [docker terraform](https://hub.docker.com/r/pjlangley/terraform)
 image from Docker Hub.
 
-It's designed to be used as a terraform executable, like a shell
-binary file. The idea is to limit personal machine software
-dependencies and provide more reliable developer experience.
-
 ## Usage
 
 For example, let's assume you have the following:
