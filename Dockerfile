@@ -16,3 +16,5 @@ WORKDIR /tfconfig
 
 ENTRYPOINT ["terraform"]
 CMD ["--help"]
+
+LABEL maintainer="Peter J Langley"
