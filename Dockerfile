@@ -1,4 +1,4 @@
-FROM alpine:3.10.3
+FROM alpine:3.11.3
 
 ARG TF_VERSION=0.12.20
 
