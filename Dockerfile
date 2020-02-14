@@ -2,8 +2,9 @@ FROM alpine:3.11.3
 
 ARG TF_VERSION=0.12.20
 
-# Required for `terraform init` tasks.
-RUN apk add curl
+# `curl` for `terraform init` fetching tasks.
+# `git` for pulling tf modules.
+RUN apk add curl git
 
 RUN wget -O tf.zip \
     https://releases.hashicorp.com/terraform/${TF_VERSION}/terraform_${TF_VERSION}_linux_amd64.zip && \
