@@ -84,10 +84,10 @@ locally with some supported overrides.
 ### Specify the Terraform version
 
 ```
-$ docker build --build-arg TF_VERSION=0.12.23 -t my/terraform .
+$ docker build --build-arg TF_VERSION=0.12.24 -t my/terraform .
 ... build output ...
 $ docker run --rm -it my/terraform version
-Terraform v0.12.23
+Terraform v0.12.24
 ```
 
 ## License
