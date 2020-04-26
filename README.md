@@ -32,7 +32,7 @@ Initializing the backend...
 
 Initializing provider plugins...
 - Checking for available provider plugins...
-- Downloading plugin for provider "aws" (hashicorp/aws) 2.36.0...
+- Downloading plugin for provider "aws" (hashicorp/aws) 2.59.0...
 
 The following providers do not have any version constraints in configuration,
 so the latest version was installed.
@@ -42,7 +42,7 @@ changes, it is recommended to add version = "..." constraints to the
 corresponding provider blocks in configuration, with the constraint strings
 suggested below.
 
-* provider.aws: version = "~> 2.36"
+* provider.aws: version = "~> 2.59"
 
 Terraform has been successfully initialized!
 
@@ -64,7 +64,7 @@ $ tree -a
 │   └── plugins
 │       └── linux_amd64
 │           ├── lock.json
-│           └── terraform-provider-aws_v2.36.0_x4
+│           └── terraform-provider-aws_v2.59.0_x4
 └── main.tf
 
 3 directories, 3 files
