@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG TF_VERSION=0.12.24
+ARG TF_VERSION=0.12.25
 
 # `curl` for `terraform init` fetching tasks.
 # `git` for pulling tf modules.
